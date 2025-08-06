@@ -22,8 +22,8 @@ const capabilities = {
 		"accessKey": "{LT_ACCESS_KEY}"
 	}
 }
-const LT_USERNAME = process.env.LT_USERNAME || "rahulkumarlambdatest";
-const LT_ACCESS_KEY = process.env.LT_ACCESS_KEY || "CfViCjAWKL4e0nMDjzQgmx4ZeCHaZeycxgw4xaakQlApOJxMHQ";
+const LT_USERNAME = process.env.LT_USERNAME || "{LT_Username";
+const LT_ACCESS_KEY = process.env.LT_ACCESS_KEY || "{LT_Access_Key}";
 
 // Patching the capabilities dynamically according to the project name.
 const modifyCapabilities = (configName, testName) => {
@@ -38,8 +38,8 @@ const modifyCapabilities = (configName, testName) => {
     capabilities['LT:Options']['name'] = testName
     capabilities['LT:Options']['build'] = 'Playwright JS Android Build'
     capabilities['LT:Options']['isRealMobile'] = true
-    capabilities['LT:Options']['username'] = "rahulkumarlambdatest",
-    capabilities['LT:Options']['accessKey'] = "CfViCjAWKL4e0nMDjzQgmx4ZeCHaZeycxgw4xaakQlApOJxMHQ"
+    capabilities['LT:Options']['username'] = "{LT_Username}",
+    capabilities['LT:Options']['accessKey'] = "{LT_Access_Key}"
 
     delete capabilities.browserName;
     delete capabilities.browserVersion;
