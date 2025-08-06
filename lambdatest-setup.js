@@ -18,8 +18,8 @@ const capabilities = {
 		"build": "SamplePWBuild",
 		"name": "SamplePWTest",
 		"isRealMobile": true,
-		"user": "rahulkumarlambdatest",
-		"accessKey": "CfViCjAWKL4e0nMDjzQgmx4ZeCHaZeycxgw4xaakQlApOJxMHQ"
+		"user": "{LT_USERNAME}",
+		"accessKey": "{LT_ACCESS_KEY}"
 	}
 }
 const LT_USERNAME = process.env.LT_USERNAME || "rahulkumarlambdatest";
